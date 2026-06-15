@@ -22,4 +22,4 @@ A responsive image gallery built with HTML, CSS, and JavaScript for CodeAlpha We
 3. Click on any image to see lightbox effect
 
 ---
-Made with ❤️ for CodeAlpha Internship
+Made by Tooba Shahid for CodeAlpha Internship
