@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero">
+
+    <h1>Image Gallery</h1>
+
+    <p class="subtitle">
+        See the world through my lens:<br>
+        Adventures in photos
+    </p>
+
+</section>
+
+<div id="homePage" class="carousel">
+
+    <div class="card" onclick="openGallery('nature')">
+        <img src="rakaposhi.jpeg">
+        <div class="overlay">
+            <h3>Nature</h3>
+            <p>"Nature never goes out of style."</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="openGallery('flowers')">
+        <img src="white rose.jpeg">
+        <div class="overlay">
+            <h3>Flowers</h3>
+             <p>"Every flower blooms in its own time."</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="openGallery('city')">
+        <img src="lahore.jpeg">
+        <div class="overlay">
+            <h3>City</h3>
+            <p>"Cities tell stories that never end."</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="openGallery('animals')">
+        <img src="horse.jpeg">
+        <div class="overlay">
+            <h3>Animals</h3>
+            <p>"Animals teach us loyalty without words."</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="openGallery('countries')">
+        <img src="turkey.jpeg">
+        <div class="overlay">
+            <h3>Countries</h3>
+            <p>"Every country has a story to tell."</p>
+        </div>
+    </div>
+
+</div>
+
+<div id="galleryPage">
+
+    <button class="back-btn" onclick="goBack()">
+        ← Back
+    </button>
+
+    <h2 id="galleryTitle"></h2>
+
+<p id="categoryQuote"></p>
+
+<div id="galleryImages" class="gallery-grid"></div>
+
+</div>
+
+<div id="lightbox">
+
+    <span class="close" onclick="closeLightbox()">×</span>
+
+    <button class="prev" onclick="changeImage(-1)">❮</button>
+
+    <img id="lightboxImg">
+
+    <button class="next" onclick="changeImage(1)">❯</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
